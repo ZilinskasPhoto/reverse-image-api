@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: reverse-image-api
+    env: python
+    buildCommand: ""
+    startCommand: "python app.py"
+    envVars:
+      - key: SERPAPI_KEY
+        value: your_serpapi_key_here
+    plan: free
